@@ -8,7 +8,7 @@
 
 ## Publicación del sitio en red local (LAN)
 
-Durante el desarrollo del laboratorio, se implementó el despliegue del sitio web utilizando un servidor local accesible desde la red LAN de la Universidad. La dirección IP asignada a la estación de trabajo fue:
+Durante el desarrollo del laboratorio, se implementó el despliegue del sitio web utilizando un servidor local accesible desde la red LAN de la Universidad. 
 
 ### **Captura de Pantalla**:
 
