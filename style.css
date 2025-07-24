@@ -1,0 +1,97 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------- HEADER CON FLEXBOX ---------------------- */
+/* Flex para logo a la izquierda y navegación a la derecha */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 1rem;
+  background-color: #8c1d40; /* Rojo institucional UMG */
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ---------------------- SECCIÓN PRINCIPAL ---------------------- */
+.main {
+  padding: 2rem;
+  text-align: center;
+}
+
+.main h2 {
+  margin-bottom: 2rem;
+}
+
+/* ---------------------- CARDS CON FLEXBOX ---------------------- */
+/* Flexbox para organizar tarjetas adaptable */
+.card-container {
+  display: flex;               /* Activamos Flexbox */
+  flex-wrap: wrap;             /* Que se ajusten en múltiples líneas */
+  justify-content: center;     /* Centrado horizontal */
+  align-items: flex-start;     /* Alineación vertical */
+  gap: 1rem;                   /* Espacio entre tarjetas */
+}
+
+/* Estilo de cada tarjeta */
+.card {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  flex: 1 1 200px;
+  max-width: 300px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover para que se vea interactiva */
+.card:hover {
+  transform: scale(1.05);
+  background-color: #ffe3e3;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+.footer {
+  background-color: #8c1d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+/* Para móviles: todo en columna */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
